@@ -3,4 +3,6 @@
 let dist = require('./dist/index')
 
 console.log(dist.adder(3, 5))
-console.log(dist.div(7, 3))
+dist.div(7, 3, 2000, function(x) {
+  console.log(x)
+})

@@ -6,7 +6,9 @@
 <script>
 setTimeout(function() {
   console.log(TypeScriptSample.adder(12, 7))
-  console.log(TypeScriptSample.div(8, 0))
+  TypeScriptSample.div(8, 3, 2000, function(x) {
+    console.log(x)
+  })
 }, 1000)
 </script>
 <body>

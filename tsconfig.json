@@ -1,7 +1,7 @@
 {
 "compilerOptions": {
     "types": ["bluebird", "node", "express", "lodash"],
-    "target": "es2017",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,

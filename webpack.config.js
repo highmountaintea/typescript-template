@@ -1,4 +1,7 @@
 let webpack = require("webpack")
+// const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+// uglify does not support Harmony, so TS has to generate all the way down to es5 for this to work
+// unless we pull uglify from github directly
 
 module.exports = {
   entry: "./compiled/index.js",
@@ -21,12 +24,13 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'es2016', 'es2017']
+          presets: ['es2015']
         }
       }
     ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({sourceMap: true, minimize: true})
+    // new UglifyJSPlugin()
   ]
 }
