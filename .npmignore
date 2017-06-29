@@ -68,4 +68,5 @@ yarn.lock
 # Specific to typescript-template
 dist/
 src/
+webpack.config.js
 tsconfig.json

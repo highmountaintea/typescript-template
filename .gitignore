@@ -68,4 +68,3 @@ yarn.lock
 # Specific to typescript-template
 dist/
 compiled/
-tsconfig.json
