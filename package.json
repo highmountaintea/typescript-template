@@ -2,7 +2,7 @@
   "name": "typescript-template",
   "version": "1.0.0",
   "description": "Typescript structure for a smooth development experience",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev-no-ide": "concurrently \"tsc -w\" \"nodemon compiled/index.js\"",
     "dev": "nodemon compiled/index.js",
