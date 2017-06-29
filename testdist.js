@@ -2,4 +2,5 @@
 
 let dist = require('./dist/index')
 
-console.log(dist)
+console.log(dist.adder(3, 5))
+console.log(dist.div(7, 3))
