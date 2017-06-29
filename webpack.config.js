@@ -30,7 +30,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({sourceMap: true, minimize: true})
+    new webpack.optimize.UglifyJsPlugin({minimize: true, mangle: true, compress: true, sourceMap: true})
     // new UglifyJSPlugin()
   ]
 }
