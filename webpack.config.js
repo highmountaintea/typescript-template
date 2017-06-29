@@ -9,6 +9,13 @@ module.exports = {
   },
   devtool: 'source-map',
   module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: ['source-map-loader'],
+        enforce: 'pre'
+      }
+    ],
     loaders: [
       {
         exclude: /node_modules/,
