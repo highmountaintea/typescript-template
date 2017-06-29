@@ -4,6 +4,10 @@
   "description": "Typescript structure for a smooth development experience",
   "main": "index.js",
   "scripts": {
+    "dev-no-ide": "concurrently \"tsc -w\" \"nodemon compiled/index.js\"",
+    "dev": "nodemon compiled/index.js",
+    "start": "node compiled/index.js",
+    "build": "tsc && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
